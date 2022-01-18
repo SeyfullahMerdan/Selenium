@@ -28,7 +28,7 @@ public class C05_NavigationMethods {
         driver.manage().window().maximize();
         driver.quit(); // quit varsa açık olan tüm sayfaları kapatır. Close ise sadece
         // driverin son bulundugu sayfayı kapatır
-        driver.close();
+       //  driver.close();
 
 
 

@@ -27,9 +27,9 @@ public class C03_GetMethods {
         String actualTitle = driver.getTitle();
 
 
-        String arananKelime="Amazon";
+        String arananKelime="Amazon";  // expected result
 
-
+      // expected result == actual
         if (actualTitle.contains(arananKelime)) {
             System.out.println("Title test PASS");
         } else {

@@ -12,6 +12,7 @@ public class C01_Get {
         driver.get("http://www.amazon.com");
     // driver.get methodu drivera gidecegi web adresini girmemizi sağlar.
 
+        driver.get("http://");
 
          Thread.sleep(3000);    // güvenli kapatma saglıyor, 3 saniye bekletiyor.
 

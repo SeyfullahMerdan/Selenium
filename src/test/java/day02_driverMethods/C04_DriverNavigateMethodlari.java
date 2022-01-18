@@ -23,8 +23,6 @@ public class C04_DriverNavigateMethodlari {
         driver.navigate().refresh(); // sayfayı yeniler.
 
 
-
-
     }
 
 }

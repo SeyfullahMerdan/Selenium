@@ -1,5 +1,8 @@
 package SeleniumHomeworks;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class hw1 {
 
     public static void main(String[] args) {
@@ -13,20 +16,37 @@ public class hw1 {
         6.Consola “Test completed” yazdirin   */
 
 
+        System.setProperty("webdriver.chrome.driver" , "src/driver/chromedriver.exe");
+        WebDriver driver= new ChromeDriver();
+        // 1.
+        driver.get("https://www.youtube.com");
+        //2.
+        System.out.println(driver.getTitle());
 
+        //3.
 
+        String actuelTitle=driver.getTitle();
+        String exceptedResult="YouTube";
 
+        if (actuelTitle.equals(exceptedResult)) {
+            System.out.println("correct title");
+        } else {
+            System.out.println("incorrect title");
+        }
 
+        //4.
 
+        driver.close();
 
+        // 5.
 
+        driver.quit();
 
+        // 6.
 
-
+        System.out.println("Test Completed");
 
 
 
     }
-
-
 }
