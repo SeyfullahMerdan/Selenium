@@ -84,9 +84,9 @@ public class C02_LoginTest {
         //3. Sayfada kac tane link oldugunu bulun.
 
         List<WebElement>linklerListesi=driver.findElements(By.tagName("a"));
-        System.out.println(linklerListesi.size());
 
-        driver.close();
+        System.out.println("Sayfada " + linklerListesi.size() + " tane link vardır.");
+
 
     }
 }

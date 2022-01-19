@@ -21,11 +21,11 @@ public class C03_WebElementGetMethodlari {
         WebElement signInLinki=driver.findElement(By.id("sign-in"));
         System.out.println("size: " + signInLinki.getSize());  // butonun boyutunu getiriyor
         System.out.println("aria rolü: "+signInLinki.getAriaRole()); // rolünü getirdi.
-        System.out.println("accessible name " + signInLinki.getAccessibleName());
-        System.out.println("id attribute value'su "+ signInLinki.getAttribute("id"));
-        System.out.println("location: " + signInLinki.getLocation());
-        System.out.println("genislik: " + signInLinki.getRect().width);
-        System.out.println("colour: " + signInLinki.getCssValue("color"));
+        System.out.println("accessible name " + signInLinki.getAccessibleName());//
+        System.out.println("id attribute value'su "+ signInLinki.getAttribute("id")); // signIn idnin degeri getirir
+        System.out.println("location: " + signInLinki.getLocation());//
+        System.out.println("genislik: " + signInLinki.getRect().width);//elementin widthi veya heigtini alır
+        System.out.println("colour: " + signInLinki.getCssValue("color"));//
 
       driver.close();
     }
