@@ -41,6 +41,9 @@ public class C01_Tekrar {
 
         WebElement sonucYazisiElementi=driver.findElement(By.className("sg-col-inner"));
 
+        // className ile daha önce bu elementi locate edemedigimiz halde
+        // xPath ile class attribute'nu kullanarak locate edebildik.
+
         System.out.println(sonucYazisiElementi.getText());
 
         //    e. Sonra karşınıza çıkan ilk sonucun resmine tıklayın.
@@ -52,11 +55,5 @@ public class C01_Tekrar {
         // Variable oluşturmadan direk locate edip istedigimiz işlemi yapabiliriz.
 
         driver.findElement(By.className("s-image")).click();
-
-
-
-
-
-
     }
 }
