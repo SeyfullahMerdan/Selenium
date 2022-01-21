@@ -45,6 +45,6 @@ public class navigator_manage {
 
         driver.manage().window().setPosition(new Point(400,600));
 
-
+        driver.quit();
     }
 }
